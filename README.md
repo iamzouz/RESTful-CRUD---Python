@@ -5,6 +5,18 @@ Kindly find above my code for the requested RESTful CRUD API web application wit
 Below are the structures of the RESTful CRUD APIs. (If you want to test it, with Postman for example)<br>
 And please note that i used MySQL DB.
 
+```
+CREATE DATABASE  IF NOT EXISTS `cmacgmassignment`;
+
+CREATE TABLE `users_user` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `fname` varchar(50) NOT NULL,
+  `lname` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `phone` varchar(30) NOT NULL,
+  PRIMARY KEY (`id`)
+);
+```
 
 ### GET /api/users  -  Get and list all users
 ```
